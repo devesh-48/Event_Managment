@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Events</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #0d0d0d;
+        color: #eaeaea;
+    }
+
+    /* TOP NAVBAR */
+    nav {
+        background: #111;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    nav img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+    nav a {
+        margin: 0 15px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        background: url('https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg') center/cover;
+        height: 70vh;
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+    .hero h1 {
+        font-size: 48px;
+        text-shadow: 0 3px 10px black;
+    }
+
+    /* CARD-BASED HOMEPAGE */
+    .section { padding: 40px; max-width: 1100px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 20px; }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .card {
+        background: #1a1a1a;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        text-align: center;
+    }
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+        height: 180px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background: #111;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <img src="eventlogo.jpg" alt="Logo">
+    <div>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#booking">Booking</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO BANNER -->
+<div class="hero" id="home">
+    <h1>Elite Events – We Create Unforgettable Moments</h1>
+</div>
+
+<!-- CARD-BASED EVENT SECTION WITH IMAGES -->
+<div class="section" id="events">
+    <h2>Our Event Specialties</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/265947/pexels-photo-265947.jpeg" alt="Wedding">
+            <h3>Luxury Weddings</h3>
+            <p>Décor, venue design & complete management.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/3184312/pexels-photo-3184312.jpeg" alt="Corporate Meeting">
+            <h3>Corporate Events</h3>
+            <p>Professional stage setup & branding experience.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg" alt="Concert">
+            <h3>Concerts & Festivals</h3>
+            <p>Live music, sound engineering & lighting.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/2747448/pexels-photo-2747448.jpeg" alt="Fashion Show">
+            <h3>Fashion Shows</h3>
+            <p>Runway setup, lighting & backstage handling.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/210134/pexels-photo-210134.jpeg" alt="Award Night">
+            <h3>Award Nights</h3>
+            <p>Stage décor, presenters & full event flow.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg" alt="Private Party">
+            <h3>Private Parties</h3>
+            <p>Theme décor, lighting & premium arrangements.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- BOOKING -->
+<div class="section" id="booking">
+    <h2>Booking Information</h2>
+    <p style="text-align:center;">Email: <strong>booking@eliteevents.com</strong></p>
+    <p style="text-align:center;">Call: <strong>+91 98765 43210</strong></p>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="section" id="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="card"><p>"They made our wedding magical!" – Priya</p></div>
+    <div class="card"><p>"Highly professional corporate event handling." – TechCorp</p></div>
+    <div class="card"><p>"Amazing creativity for our fashion show!" – GlamHouse</p></div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">Email: info@eliteevents.com</p>
+    <p style="text-align:center;">Phone: +91 98765 43210</p>
+</div>
+
+<footer>
+    © 2025 Elite Events Management. All Rights Reserved.
+</footer>
+
+</body>
+</html>
